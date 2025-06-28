@@ -8,7 +8,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"clean-architecture-sample/internal/api"
 	"clean-architecture-sample/internal/config"
 	"clean-architecture-sample/internal/infrastructure"
 	"clean-architecture-sample/internal/interface/handler"
@@ -22,12 +21,6 @@ import (
 )
 
 func main() {
-	// --- swaggo/swag で API 型を認識させるためのダミー参照 ---
-	_ = struct {
-		A api.CreateUserRequest
-		B api.UpdateUserRequest
-		C api.UserResponse
-	}{}
 	cfg := config.LoadConfig() // 設定を読み込む
 
 	// インフラ層: ファイルベースのユーザーリポジトリ
