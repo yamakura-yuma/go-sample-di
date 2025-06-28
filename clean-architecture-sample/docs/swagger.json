@@ -1,0 +1,12 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "gin-swagger sample",
+        "contact": {},
+        "license": {
+            "name": "yyamakura"
+        },
+        "version": "1.0"
+    },
+    "paths": {}
+}

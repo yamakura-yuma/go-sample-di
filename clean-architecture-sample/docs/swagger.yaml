@@ -1,0 +1,8 @@
+info:
+  contact: {}
+  license:
+    name: yyamakura
+  title: gin-swagger sample
+  version: "1.0"
+paths: {}
+swagger: "2.0"
