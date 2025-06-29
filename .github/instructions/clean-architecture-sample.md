@@ -49,6 +49,8 @@ clean-architecture-sample/
 ├── cmd/
 │   └── main.go
 └── internal/
+    ├── api/            # APIの型
+    ├── config/         # 環境変数の設定ファイル
     ├── domain/         # ドメイン層（エンティティ・リポジトリインターフェース等）
     ├── usecase/        # ユースケース層
     ├── interface/      # インターフェース層（ハンドラー等）

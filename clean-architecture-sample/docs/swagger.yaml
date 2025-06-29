@@ -24,31 +24,6 @@ definitions:
       name:
         type: string
     type: object
-  handler.CreateUserRequest:
-    properties:
-      email:
-        type: string
-      id:
-        type: string
-      name:
-        type: string
-    type: object
-  handler.UpdateUserRequest:
-    properties:
-      email:
-        type: string
-      name:
-        type: string
-    type: object
-  handler.UserResponse:
-    properties:
-      email:
-        type: string
-      id:
-        type: string
-      name:
-        type: string
-    type: object
 info:
   contact: {}
   license:
@@ -67,14 +42,14 @@ paths:
         name: user
         required: true
         schema:
-          $ref: '#/definitions/handler.CreateUserRequest'
+          $ref: '#/definitions/api.CreateUserRequest'
       produces:
       - application/json
       responses:
         "201":
           description: Created
           schema:
-            $ref: '#/definitions/handler.UserResponse'
+            $ref: '#/definitions/api.UserResponse'
         "400":
           description: Bad Request
           schema:
@@ -127,7 +102,7 @@ paths:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/handler.UserResponse'
+            $ref: '#/definitions/api.UserResponse'
         "404":
           description: Not Found
           schema:
@@ -152,7 +127,7 @@ paths:
         name: user
         required: true
         schema:
-          $ref: '#/definitions/handler.UpdateUserRequest'
+          $ref: '#/definitions/api.UpdateUserRequest'
       produces:
       - application/json
       responses:
